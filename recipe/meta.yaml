@@ -1,5 +1,5 @@
 {% set name = "cweqgen" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4316c7ff01aeb48f342e0f093d0a66c39fedb77db593e26f234df740ed2ba334
+  sha256: d0d75ce8194908e9addf3b225fd6a4e12d83d8e8cdc5b0d609ee5f71566211cf
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,7 +41,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'The CW Equation Generator'
+  summary: The CW Equation Generator
   description: |
     The cweqgen (pronouced like "Queck-Jen") package provides a way to
     generate a range of common CW equations using user supplied fiducial
