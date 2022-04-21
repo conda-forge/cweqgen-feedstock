@@ -1,5 +1,5 @@
 {% set name = "cweqgen" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d0d75ce8194908e9addf3b225fd6a4e12d83d8e8cdc5b0d609ee5f71566211cf
+  sha256: 88cad9f38eb6d8ae60c6419690b280996dfd00c786ea663766d0d208cb4d99c8
 
 build:
   noarch: python
